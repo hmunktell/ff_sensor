@@ -12,7 +12,7 @@
 
 //-- Select Part To View --//
 
-view_part = 10;	// [0:nothing, 1:assembled, 2:load_cell, 3:bowden_bracket, 4:load_cell_bracket, 5:bottom_stepper_bracket, 6:top_stepper_bracket, 7:full_load_cell_bracket, 8:extruder, 9:idler, 10:strut, 11:axle, 12:tube_bracket]
+view_part = 1;	// [0:nothing, 1:assembled, 2:load_cell, 3:bowden_bracket, 4:load_cell_bracket, 5:bottom_stepper_bracket, 6:top_stepper_bracket, 7:full_load_cell_bracket, 8:extruder, 9:idler, 10:strut, 11:axle, 12:tube_bracket]
 
 //-- END Select Part To View --//
 
@@ -86,11 +86,11 @@ stbsdh = 7.5;	// (M3 = 7.5)(M4 = 8.8) Screw Hex head size
 
 if (view_part == 1) {	// Assembled view
 	translate([45.5+lchle,-3+(lcw-12.7),44]) rotate([90,0,-90]) extruder();
-	//translate([lchle+lchln+lchcd-7.5,-(smbw/2)-9.25+(lcw/2),lch]) rotate([0,0,0]) bottom_stepper_bracket();
-	//translate([25+lchle+lchln+lchcd-7.5,-(smbw/2)-9.25+(lcw/2),18+lch]) rotate([0,-90,0]) top_stepper_bracket();
-	//translate([0,0,0]) rotate([0,0,0]) load_cell();
-	//translate([21+lchle,26+(lcw/2),-42]) rotate([0,-90,90]) load_cell_bracket();
-	//translate([21+lchle,-2.7+(lcw-12.7),-22]) rotate([0,-90,90]) bowden_bracket();
+	translate([lchle+lchln+lchcd-7.5,-(smbw/2)-9.25+(lcw/2),lch]) rotate([0,0,0]) bottom_stepper_bracket();
+	translate([25+lchle+lchln+lchcd-7.5,-(smbw/2)-9.25+(lcw/2),18+lch]) rotate([0,-90,0]) top_stepper_bracket();
+	translate([0,0,0]) rotate([0,0,0]) load_cell();
+	translate([21+lchle,26+(lcw/2),-42]) rotate([0,-90,90]) load_cell_bracket();
+	translate([21+lchle,-2.7+(lcw-12.7),-22]) rotate([0,-90,90]) bowden_bracket();
 }
 if (view_part == 2) {
 	translate([0,0,0]) rotate([0,0,0]) load_cell();
