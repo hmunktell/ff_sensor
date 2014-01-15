@@ -12,7 +12,7 @@
 
 //-- Select Part To View --//
 
-view_part = 1;	// [0:nothing, 1:assembled, 2:load_cell, 3:bowden_bracket, 4:load_cell_bracket, 5:bottom_stepper_bracket, 6:top_stepper_bracket, 7:full_load_cell_bracket, 8:extruder, 9:idler, 10:strut, 11:axle, 12:tube_bracket]
+view_part = 6;	// [0:nothing, 1:assembled, 2:load_cell, 3:bowden_bracket, 4:load_cell_bracket, 5:bottom_stepper_bracket, 6:top_stepper_bracket, 7:full_load_cell_bracket, 8:extruder, 9:idler, 10:strut, 11:axle, 12:tube_bracket]
 
 //-- END Select Part To View --//
 
@@ -43,11 +43,11 @@ lchrc = 15; 	// (15) Measure distance between the center of the third and fourth
 //---- START Load Cell Bracket Configuration ----//
 
 // Configuration for part 4:load_cell_bracket
-lcbhs = 4.5;	// (4.5) Bracket screw hole size for load cell attachment
-lcbfh = 8;		// (8) Bracket screw hole size for attachment to printer
+lcbhs = 5.2;	// (4.5) Bracket screw hole size for load cell attachment
+lcbfh = 6;		// (8) Bracket screw hole size for attachment to printer
 lcbss = 46;		// (46) Bracket fixing screw holes distance apart, hole center to hole center
-lcbbss = 4.5;	// (4.5) Bowden bracket attachment screw size
-lcbbssh = 8.4;	// (8.4) Bowden bracket attachment screw Hex head size
+lcbbss = 4.2;	// (4.5) Bowden bracket attachment screw size
+lcbbssh = 8.0;	// (8.4) Bowden bracket attachment screw Hex head size
 
 //-- END Load Cell Bracket Configuration--//
 
@@ -59,9 +59,9 @@ lcbbssh = 8.4;	// (8.4) Bowden bracket attachment screw Hex head size
 // Configuration for part 5:bottom_stepper_bracket
 smw = 44;	// NEMA 17 stepper motor case width
 
-// Stepper motor bottom bracket load cell attachment acrew size
+// Stepper motor bottom bracket load cell attachment screw size
 sbsd = 3.5;		// (M3 = 3.5)(M4 = 4.5) Screw size
-sbsdh = 7.5;	// (M3 = 7.5)(M4 = 8.8) Screw Hex head size
+sbsdh = 6.3;	// (M3 = 7.5)(M4 = 8.8) Screw Hex head size
 
 //-- END Stepper Motor Botton Bracket Configuration --//
 
@@ -73,7 +73,7 @@ sbsdh = 7.5;	// (M3 = 7.5)(M4 = 8.8) Screw Hex head size
 // Configuration for part 6:top_stepper_bracket
 // Stepper motor Top bracket load cell attachment acrew size
 stbsd = 3.5;		// (M3 = 3.5)(M4 = 4.5) Screw size
-stbsdh = 7.5;	// (M3 = 7.5)(M4 = 8.8) Screw Hex head size
+stbsdh = 6.3;	// (M3 = 7.5)(M4 = 8.8) Screw Hex head size
 
 //-- END Stepper Motor Top Bracket Configuration --//
 
